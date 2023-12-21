@@ -11,7 +11,8 @@ class SearchResult with _$SearchResult {
     String? trackingParams,
   }) = _SearchResult;
 
-  factory SearchResult.fromJson(Map<String, dynamic> json) => _$SearchResultFromJson(json);
+  factory SearchResult.fromJson(Map<String, dynamic> json) =>
+      _$SearchResultFromJson(json);
 }
 
 @freezed
@@ -20,7 +21,8 @@ class SearchResultContent with _$SearchResultContent {
     SearchSuggestionsSectionRenderer? searchSuggestionsSectionRenderer,
   }) = _SearchResultContent;
 
-  factory SearchResultContent.fromJson(Map<String, dynamic> json) => _$SearchResultContentFromJson(json);
+  factory SearchResultContent.fromJson(Map<String, dynamic> json) =>
+      _$SearchResultContentFromJson(json);
 }
 
 @freezed
@@ -29,16 +31,21 @@ class SearchSuggestionsSectionRenderer with _$SearchSuggestionsSectionRenderer {
     List<SearchSuggestionsSectionRendererContent>? contents,
   }) = _SearchSuggestionsSectionRenderer;
 
-  factory SearchSuggestionsSectionRenderer.fromJson(Map<String, dynamic> json) => _$SearchSuggestionsSectionRendererFromJson(json);
+  factory SearchSuggestionsSectionRenderer.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuggestionsSectionRendererFromJson(json);
 }
 
 @freezed
-class SearchSuggestionsSectionRendererContent with _$SearchSuggestionsSectionRendererContent {
+class SearchSuggestionsSectionRendererContent
+    with _$SearchSuggestionsSectionRendererContent {
   factory SearchSuggestionsSectionRendererContent({
     SearchSuggestionRenderer? searchSuggestionRenderer,
   }) = _SearchSuggestionsSectionRendererContent;
 
-  factory SearchSuggestionsSectionRendererContent.fromJson(Map<String, dynamic> json) => _$SearchSuggestionsSectionRendererContentFromJson(json);
+  factory SearchSuggestionsSectionRendererContent.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuggestionsSectionRendererContentFromJson(json);
 }
 
 @freezed
@@ -47,10 +54,11 @@ class SearchSuggestionRenderer with _$SearchSuggestionRenderer {
     Suggestion? suggestion,
     NavigationEndpoint? navigationEndpoint,
     String? trackingParams,
-    Icon? icon,
+    Iconn? icon,
   }) = _SearchSuggestionRenderer;
 
-  factory SearchSuggestionRenderer.fromJson(Map<String, dynamic> json) => _$SearchSuggestionRendererFromJson(json);
+  factory SearchSuggestionRenderer.fromJson(Map<String, dynamic> json) =>
+      _$SearchSuggestionRendererFromJson(json);
 }
 
 @freezed
@@ -59,7 +67,8 @@ class Suggestion with _$Suggestion {
     List<Run>? runs,
   }) = _Suggestion;
 
-  factory Suggestion.fromJson(Map<String, dynamic> json) => _$SuggestionFromJson(json);
+  factory Suggestion.fromJson(Map<String, dynamic> json) =>
+      _$SuggestionFromJson(json);
 }
 
 @freezed
@@ -79,7 +88,8 @@ class NavigationEndpoint with _$NavigationEndpoint {
     SearchEndpoint? searchEndpoint,
   }) = _NavigationEndpoint;
 
-  factory NavigationEndpoint.fromJson(Map<String, dynamic> json) => _$NavigationEndpointFromJson(json);
+  factory NavigationEndpoint.fromJson(Map<String, dynamic> json) =>
+      _$NavigationEndpointFromJson(json);
 }
 
 @freezed
@@ -88,16 +98,17 @@ class SearchEndpoint with _$SearchEndpoint {
     String? query,
   }) = _SearchEndpoint;
 
-  factory SearchEndpoint.fromJson(Map<String, dynamic> json) => _$SearchEndpointFromJson(json);
+  factory SearchEndpoint.fromJson(Map<String, dynamic> json) =>
+      _$SearchEndpointFromJson(json);
 }
 
 @freezed
-class Icon with _$Icon {
-  factory Icon({
+class Iconn with _$Iconn {
+  factory Iconn({
     String? iconType,
-  }) = _Icon;
+  }) = _Iconn;
 
-  factory Icon.fromJson(Map<String, dynamic> json) => _$IconFromJson(json);
+  factory Iconn.fromJson(Map<String, dynamic> json) => _$IconnFromJson(json);
 }
 
 @freezed
@@ -107,7 +118,8 @@ class ResponseContext with _$ResponseContext {
     List<ServiceTrackingParam>? serviceTrackingParams,
   }) = _ResponseContext;
 
-  factory ResponseContext.fromJson(Map<String, dynamic> json) => _$ResponseContextFromJson(json);
+  factory ResponseContext.fromJson(Map<String, dynamic> json) =>
+      _$ResponseContextFromJson(json);
 }
 
 @freezed
@@ -117,7 +129,8 @@ class ServiceTrackingParam with _$ServiceTrackingParam {
     List<Param>? params,
   }) = _ServiceTrackingParam;
 
-  factory ServiceTrackingParam.fromJson(Map<String, dynamic> json) => _$ServiceTrackingParamFromJson(json);
+  factory ServiceTrackingParam.fromJson(Map<String, dynamic> json) =>
+      _$ServiceTrackingParamFromJson(json);
 }
 
 @freezed

@@ -88,7 +88,7 @@ _$SearchSuggestionRendererImpl _$$SearchSuggestionRendererImplFromJson(
       trackingParams: json['trackingParams'] as String?,
       icon: json['icon'] == null
           ? null
-          : Icon.fromJson(json['icon'] as Map<String, dynamic>),
+          : Iconn.fromJson(json['icon'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$SearchSuggestionRendererImplToJson(
@@ -150,11 +150,11 @@ Map<String, dynamic> _$$SearchEndpointImplToJson(
       'query': instance.query,
     };
 
-_$IconImpl _$$IconImplFromJson(Map<String, dynamic> json) => _$IconImpl(
+_$IconnImpl _$$IconnImplFromJson(Map<String, dynamic> json) => _$IconnImpl(
       iconType: json['iconType'] as String?,
     );
 
-Map<String, dynamic> _$$IconImplToJson(_$IconImpl instance) =>
+Map<String, dynamic> _$$IconnImplToJson(_$IconnImpl instance) =>
     <String, dynamic>{
       'iconType': instance.iconType,
     };

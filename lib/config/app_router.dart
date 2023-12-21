@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:play/main.dart';
+import 'package:play/ui/list_search.dart';
 import 'package:play/ui/list_songs.dart';
 
 final router = GoRouter(
@@ -24,7 +25,9 @@ final router = GoRouter(
           path: '/songs',
           parentNavigatorKey: _shellNavigatorKey,
           pageBuilder: (context, state) {
-            return const NoTransitionPage(child: ListSongs());
+            final search = state.extra as String;
+            debugPrint('Search: $search');
+            return NoTransitionPage(child: ListSongs(data: search));
           },
         ),
       ],

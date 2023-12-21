@@ -745,7 +745,7 @@ mixin _$SearchSuggestionRenderer {
   NavigationEndpoint? get navigationEndpoint =>
       throw _privateConstructorUsedError;
   String? get trackingParams => throw _privateConstructorUsedError;
-  Icon? get icon => throw _privateConstructorUsedError;
+  Iconn? get icon => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -763,11 +763,11 @@ abstract class $SearchSuggestionRendererCopyWith<$Res> {
       {Suggestion? suggestion,
       NavigationEndpoint? navigationEndpoint,
       String? trackingParams,
-      Icon? icon});
+      Iconn? icon});
 
   $SuggestionCopyWith<$Res>? get suggestion;
   $NavigationEndpointCopyWith<$Res>? get navigationEndpoint;
-  $IconCopyWith<$Res>? get icon;
+  $IconnCopyWith<$Res>? get icon;
 }
 
 /// @nodoc
@@ -805,7 +805,7 @@ class _$SearchSuggestionRendererCopyWithImpl<$Res,
       icon: freezed == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
-              as Icon?,
+              as Iconn?,
     ) as $Val);
   }
 
@@ -836,12 +836,12 @@ class _$SearchSuggestionRendererCopyWithImpl<$Res,
 
   @override
   @pragma('vm:prefer-inline')
-  $IconCopyWith<$Res>? get icon {
+  $IconnCopyWith<$Res>? get icon {
     if (_value.icon == null) {
       return null;
     }
 
-    return $IconCopyWith<$Res>(_value.icon!, (value) {
+    return $IconnCopyWith<$Res>(_value.icon!, (value) {
       return _then(_value.copyWith(icon: value) as $Val);
     });
   }
@@ -860,14 +860,14 @@ abstract class _$$SearchSuggestionRendererImplCopyWith<$Res>
       {Suggestion? suggestion,
       NavigationEndpoint? navigationEndpoint,
       String? trackingParams,
-      Icon? icon});
+      Iconn? icon});
 
   @override
   $SuggestionCopyWith<$Res>? get suggestion;
   @override
   $NavigationEndpointCopyWith<$Res>? get navigationEndpoint;
   @override
-  $IconCopyWith<$Res>? get icon;
+  $IconnCopyWith<$Res>? get icon;
 }
 
 /// @nodoc
@@ -904,7 +904,7 @@ class __$$SearchSuggestionRendererImplCopyWithImpl<$Res>
       icon: freezed == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
-              as Icon?,
+              as Iconn?,
     ));
   }
 }
@@ -928,7 +928,7 @@ class _$SearchSuggestionRendererImpl implements _SearchSuggestionRenderer {
   @override
   final String? trackingParams;
   @override
-  final Icon? icon;
+  final Iconn? icon;
 
   @override
   String toString() {
@@ -974,7 +974,7 @@ abstract class _SearchSuggestionRenderer implements SearchSuggestionRenderer {
       {final Suggestion? suggestion,
       final NavigationEndpoint? navigationEndpoint,
       final String? trackingParams,
-      final Icon? icon}) = _$SearchSuggestionRendererImpl;
+      final Iconn? icon}) = _$SearchSuggestionRendererImpl;
 
   factory _SearchSuggestionRenderer.fromJson(Map<String, dynamic> json) =
       _$SearchSuggestionRendererImpl.fromJson;
@@ -986,7 +986,7 @@ abstract class _SearchSuggestionRenderer implements SearchSuggestionRenderer {
   @override
   String? get trackingParams;
   @override
-  Icon? get icon;
+  Iconn? get icon;
   @override
   @JsonKey(ignore: true)
   _$$SearchSuggestionRendererImplCopyWith<_$SearchSuggestionRendererImpl>
@@ -1593,31 +1593,31 @@ abstract class _SearchEndpoint implements SearchEndpoint {
       throw _privateConstructorUsedError;
 }
 
-Icon _$IconFromJson(Map<String, dynamic> json) {
-  return _Icon.fromJson(json);
+Iconn _$IconnFromJson(Map<String, dynamic> json) {
+  return _Iconn.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Icon {
+mixin _$Iconn {
   String? get iconType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $IconCopyWith<Icon> get copyWith => throw _privateConstructorUsedError;
+  $IconnCopyWith<Iconn> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $IconCopyWith<$Res> {
-  factory $IconCopyWith(Icon value, $Res Function(Icon) then) =
-      _$IconCopyWithImpl<$Res, Icon>;
+abstract class $IconnCopyWith<$Res> {
+  factory $IconnCopyWith(Iconn value, $Res Function(Iconn) then) =
+      _$IconnCopyWithImpl<$Res, Iconn>;
   @useResult
   $Res call({String? iconType});
 }
 
 /// @nodoc
-class _$IconCopyWithImpl<$Res, $Val extends Icon>
-    implements $IconCopyWith<$Res> {
-  _$IconCopyWithImpl(this._value, this._then);
+class _$IconnCopyWithImpl<$Res, $Val extends Iconn>
+    implements $IconnCopyWith<$Res> {
+  _$IconnCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -1639,20 +1639,21 @@ class _$IconCopyWithImpl<$Res, $Val extends Icon>
 }
 
 /// @nodoc
-abstract class _$$IconImplCopyWith<$Res> implements $IconCopyWith<$Res> {
-  factory _$$IconImplCopyWith(
-          _$IconImpl value, $Res Function(_$IconImpl) then) =
-      __$$IconImplCopyWithImpl<$Res>;
+abstract class _$$IconnImplCopyWith<$Res> implements $IconnCopyWith<$Res> {
+  factory _$$IconnImplCopyWith(
+          _$IconnImpl value, $Res Function(_$IconnImpl) then) =
+      __$$IconnImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? iconType});
 }
 
 /// @nodoc
-class __$$IconImplCopyWithImpl<$Res>
-    extends _$IconCopyWithImpl<$Res, _$IconImpl>
-    implements _$$IconImplCopyWith<$Res> {
-  __$$IconImplCopyWithImpl(_$IconImpl _value, $Res Function(_$IconImpl) _then)
+class __$$IconnImplCopyWithImpl<$Res>
+    extends _$IconnCopyWithImpl<$Res, _$IconnImpl>
+    implements _$$IconnImplCopyWith<$Res> {
+  __$$IconnImplCopyWithImpl(
+      _$IconnImpl _value, $Res Function(_$IconnImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1660,7 +1661,7 @@ class __$$IconImplCopyWithImpl<$Res>
   $Res call({
     Object? iconType = freezed,
   }) {
-    return _then(_$IconImpl(
+    return _then(_$IconnImpl(
       iconType: freezed == iconType
           ? _value.iconType
           : iconType // ignore: cast_nullable_to_non_nullable
@@ -1671,25 +1672,25 @@ class __$$IconImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$IconImpl implements _Icon {
-  _$IconImpl({this.iconType});
+class _$IconnImpl implements _Iconn {
+  _$IconnImpl({this.iconType});
 
-  factory _$IconImpl.fromJson(Map<String, dynamic> json) =>
-      _$$IconImplFromJson(json);
+  factory _$IconnImpl.fromJson(Map<String, dynamic> json) =>
+      _$$IconnImplFromJson(json);
 
   @override
   final String? iconType;
 
   @override
   String toString() {
-    return 'Icon(iconType: $iconType)';
+    return 'Iconn(iconType: $iconType)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$IconImpl &&
+            other is _$IconnImpl &&
             (identical(other.iconType, iconType) ||
                 other.iconType == iconType));
   }
@@ -1701,27 +1702,27 @@ class _$IconImpl implements _Icon {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$IconImplCopyWith<_$IconImpl> get copyWith =>
-      __$$IconImplCopyWithImpl<_$IconImpl>(this, _$identity);
+  _$$IconnImplCopyWith<_$IconnImpl> get copyWith =>
+      __$$IconnImplCopyWithImpl<_$IconnImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$IconImplToJson(
+    return _$$IconnImplToJson(
       this,
     );
   }
 }
 
-abstract class _Icon implements Icon {
-  factory _Icon({final String? iconType}) = _$IconImpl;
+abstract class _Iconn implements Iconn {
+  factory _Iconn({final String? iconType}) = _$IconnImpl;
 
-  factory _Icon.fromJson(Map<String, dynamic> json) = _$IconImpl.fromJson;
+  factory _Iconn.fromJson(Map<String, dynamic> json) = _$IconnImpl.fromJson;
 
   @override
   String? get iconType;
   @override
   @JsonKey(ignore: true)
-  _$$IconImplCopyWith<_$IconImpl> get copyWith =>
+  _$$IconnImplCopyWith<_$IconnImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
