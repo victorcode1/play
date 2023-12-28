@@ -32,7 +32,6 @@ FutureOr<SearchResult?> searchData(SearchDataRef ref) async {
         await http.post(Uri.parse(url), headers: headers, body: bodyParams);
 
     if (res.statusCode == 200) {
-      debugPrint('Data: ${SearchResult.fromJson(json.decode(res.body))}');
       return SearchResult.fromJson(json.decode(res.body));
     } else {
       throw Exception('Failed to load data!');

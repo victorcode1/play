@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:play/provider/list_search_result.dart';
-import 'package:play/provider/search.dart';
 
 class ListSongs extends ConsumerWidget {
   const ListSongs({super.key, this.data});
@@ -79,10 +78,52 @@ class ListSongs extends ConsumerWidget {
                           .runs!
                           .first
                           .text;
+                      final idSong = data
+                          .contents!
+                          .tabbedSearchResultsRenderer!
+                          .tabs!
+                          .first
+                          .tabRenderer
+                          ?.content!
+                          .sectionListRenderer!
+                          .contents!
+                          .first
+                          .musicShelfRenderer!
+                          .contents![index]
+                          .musicResponsiveListItemRenderer!
+                          .overlay!
+                          .musicItemThumbnailOverlayRenderer!
+                          .content!
+                          .musicPlayButtonRenderer!
+                          .playNavigationEndpoint!
+                          .watchEndpoint
+                          ?.videoId;
+
+                      final playListId = data
+                          .contents!
+                          .tabbedSearchResultsRenderer!
+                          .tabs!
+                          .first
+                          .tabRenderer
+                          ?.content!
+                          .sectionListRenderer!
+                          .contents!
+                          .first
+                          .musicShelfRenderer!
+                          .contents![index]
+                          .musicResponsiveListItemRenderer
+                          ?.menu
+                          ?.menuRenderer
+                          ?.items
+                          ?.first
+                          .menuNavigationItemRenderer
+                          ?.navigationEndpoint
+                          ?.watchEndpoint
+                          ?.playlistId;
                       return ListTile(
                           onTap: () {
-                            context.go('/songs',
-                                extra: ref.watch(searchProvider));
+                            context
+                                .go('/playSong', extra: {idSong: playListId});
                           },
                           style: ListTileStyle.list,
                           leading: SizedBox(

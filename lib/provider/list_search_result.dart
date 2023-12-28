@@ -33,7 +33,6 @@ FutureOr<ListSearchResult?> searchResultData(
         await http.post(Uri.parse(url), headers: headers, body: bodyParams);
 
     if (res.statusCode == 200) {
-      debugPrint('Data: ${ListSearchResult.fromJson(json.decode(res.body))}');
       return ListSearchResult.fromJson(json.decode(res.body));
     } else {
       throw Exception('Failed to load data!');

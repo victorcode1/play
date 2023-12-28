@@ -20,7 +20,7 @@ final searchDataProvider = AutoDisposeFutureProvider<SearchResult?>.internal(
 );
 
 typedef SearchDataRef = AutoDisposeFutureProviderRef<SearchResult?>;
-String _$searchDataReqHash() => r'446393e17814adec0a2c322a3cc83025ac69b774';
+String _$searchDataReqHash() => r'7560cc809de0fc436a94d11c1e8fc9883f14def4';
 
 /// See also [SearchDataReq].
 @ProviderFor(SearchDataReq)
